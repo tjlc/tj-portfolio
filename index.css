@@ -1,0 +1,96 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Navbar Section */
+#navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-link:hover {
+    border: solid 1px gray;
+    border-radius: 50px;
+}
+
+.fa-search {
+    padding-top: 3px;
+    padding-right: 15px;
+}
+
+.search-toggle {
+    width: auto;
+    display: table;
+}
+
+.search-toggle input[type=text] {
+    position: relative;
+    padding: 15px 30px 15px 17px;
+    width: 48px;
+    height: 32px;
+    color: #333;
+    font-size: 17px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: 0.5s ease;
+    background: #fff;
+}
+
+.search-toggle input[type=text]:hover {
+    width: 150px;
+}
+
+.search-toggle input[type=text]:focus {
+    width: 300px;
+}
+
+.search-toggle i {
+    position: relative;
+    left: -33px;
+    top: 3px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Body */
+
+a {
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 10px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 50px;
+}
+
+.card-link:hover {
+    border: solid 1px gray;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+}
+
+/* Footer */
+
+#footer {
+    line-height: 1;
+}
+
+.fa-brands:hover {
+    color: #000;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat:wght@100;300;400;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cd27a9d6bc.js" crossorigin="anonymous"></script>
+
+    <title>Welcome to CLMNT!</title>
+</head>
+
+<body class="text-center bg-light">
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-light text-light sticky-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#aboutMe">CLMNT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse search-toggle" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#aboutMe">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactMe">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex justify-content-center" role="search">
+                    <input type="text" name="search" placeholder="Search..">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- About Me Section Start -->
+    <div id="aboutMe" class="container-fluid bg-dark container-body p-5">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="text-light p-5">
+                <img class="rounded-circle" src="images/Me.jpeg" alt="" width="250">
+                <h1 class="p-3">Hi, I'm TJ!</h1>
+                <h3>A web developer.</h3>
+            </div>
+        </div>
+    </div>
+    <!-- About Me Section End -->
+
+    <!-- Project Section Start -->
+    <div id="projects" class="container-fluid bg-dark container-body">
+        <div class="row bg-light text-dark d-md-flex justify-content-around align-items-center">
+            <h2 class="text-muted mt-5">Projects</h2>
+            <div class="col-lg-4 col-md-6 col-sm-12 bg-light text-center p-5 rounded">
+                <img src="images/tindog.png" class="w-100">
+                <h3 class="pb-3 mt-3">Tindog</h3>
+                <p class="pb-3 text-muted">Is your dog looking for his/her one true love? Try this app and he/she will
+                    surely like it!
+                </p>
+                <a href="https://tjlc.github.io/tindog/" target="_blank" class="card-link text-dark">Visit Now</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 bg-light text-center p-5 rounded">
+                <img src="images/drumkit.png" class="w-100">
+                <h3 class="pb-3 mt-3">Drum Kit</h3>
+                <p class="pb-3 text-muted">Hey drum lover! Do you love playing drums but don't have a drum set yet?
+                    Check this
+                    out!</p>
+                <a href="https://tjlc.github.io/DrumKit/" target="_blank" class="card-link text-dark">Visit Now</a>
+            </div>
+            <div class="col-lg-4 bg-light text-center p-5 rounded">
+                <img src="images/dicegame.png" class="w-100">
+                <h3 class="pb-3 mt-3">Dice Game</h3>
+                <p class="pb-3 text-muted">This is a dice game match. Test your luck and see who wins. Good luck!</p>
+                <a href="https://github.com/tjlc/DiceGame" target="_blank" class="card-link text-dark">Visit Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Project Section End -->
+
+    <!-- Contact Me Start -->
+    <div id="contactMe" class="bg-dark text-light p-5">
+        <h2>Get in touch</h2>
+        <form class="col-md-8 col-xl-4 mx-auto">
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="form4Example1" class="form-control" />
+                <label class="form-label" for="form4Example1">Name</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" class="form-control" />
+                <label class="form-label" for="form4Example2">Email address</label>
+            </div>
+
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Message</label>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                <label class="form-check-label" for="form4Example4">
+                    Subscribe to our newsletter
+                </label>
+            </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Send Email
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Message Successfully Sent!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    <!-- Contact Me End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="">
+        <footer class="bg-light pt-3" id="footer">
+            <a class="p-4 text-muted" href="https://www.linkedin.com/in/tj-clemente-927944a0/"><i
+                    class="fa-brands fa-linkedin footer-links"></i></a>
+            <a class="p-4 text-muted" href="https://www.facebook.com/tjclemente"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a class="p-4 text-muted" href="https://gitlab.com/tjclemente"><i class="fa-brands fa-gitlab"></i></a>
+            <a class="p-4 text-muted" href="https://github.com/tjlc"><i class="fa-brands fa-github"></i></i></a>
+
+            <p class="p-3 m-0">© Copyright 2022 TJ Clemente</p>
+        </footer>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

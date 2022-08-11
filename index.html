@@ -34,9 +34,9 @@
 <body class="text-center bg-light">
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-light text-light sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#aboutMe">CLMNT</a>
+            <a class="navbar-brand text-light" href="#aboutMe">CLMNT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -45,16 +45,16 @@
             <div class="collapse navbar-collapse search-toggle" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#aboutMe">Home</a>
+                        <a class="nav-link text-light" aria-current="page" href="#aboutMe">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutMe">About Me</a>
+                        <a class="nav-link text-light" href="#aboutMe">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link text-light" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactMe">Contact</a>
+                        <a class="nav-link text-light" href="#contactMe">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex justify-content-center" role="search">
@@ -68,18 +68,56 @@
 
     <!-- About Me Section Start -->
     <div id="aboutMe" class="container-fluid bg-dark container-body p-5">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="text-light p-5">
-                <img class="rounded-circle" src="images/Me.jpeg" alt="" width="250">
-                <h1 class="p-3">Hi, I'm TJ!</h1>
-                <h3>A web developer.</h3>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+            data-bs-interval="3000" data-bs-pause="hover">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="text-light p-5">
+                            <img class="rounded-circle" src="images/Me.jpeg" alt="" width="250">
+                            <h1 class="p-3">Hi, I'm TJ!</h1>
+                            <h3>A web developer.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="text-light p-5">
+                            <img class="rounded-circle" src="images/webdeveloper.png" alt="" width="250">
+                            <h1 class="p-3">Web Developer Life</h1>
+                            <p>I am a web designer / developer based in Manila. I have a passion for web design and I would love to start a project with you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="text-light p-5">
+                            <img width="100" src="images/logo-html5.png" />
+                            <img width="100" src="images/logo-css3.png" />
+                            <div>
+                                <img width="150" src="images/logo-bootstrap.png" />
+                            </div>
+                            <h1 class="p-3">Technologies</h1>
+                            <p>An expert in using HTML5, CSS3, and Bootstrap 5.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- About Me Section End -->
 
     <!-- Project Section Start -->
-    <div id="projects" class="container-fluid bg-dark container-body">
+    <div id="projects" class="container-fluid container-body">
         <div class="row bg-light text-dark d-md-flex justify-content-around align-items-center">
             <h2 class="text-muted mt-5">Projects</h2>
             <div class="col-lg-4 col-md-6 col-sm-12 bg-light text-center p-5 rounded">
@@ -88,21 +126,22 @@
                 <p class="pb-3 text-muted">Is your dog looking for his/her one true love? Try this app and he/she will
                     surely like it!
                 </p>
-                <a href="https://tjlc.github.io/tindog/" target="_blank" class="card-link text-dark">Visit Now</a>
+                <a href="https://tjlc.github.io/tindog/" target="_blank" class="card-link text-dark"
+                    id="linkHover">Visit Now</a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 bg-light text-center p-5 rounded">
                 <img src="images/drumkit.png" class="w-100">
                 <h3 class="pb-3 mt-3">Drum Kit</h3>
                 <p class="pb-3 text-muted">Hey drum lover! Do you love playing drums but don't have a drum set yet?
-                    Check this
-                    out!</p>
+                    Check this out!</p>
                 <a href="https://tjlc.github.io/DrumKit/" target="_blank" class="card-link text-dark">Visit Now</a>
             </div>
-            <div class="col-lg-4 bg-light text-center p-5 rounded">
+            <div class="col-lg-4 col-md-6 col-sm-12 bg-light text-center p-5 rounded">
                 <img src="images/dicegame.png" class="w-100">
                 <h3 class="pb-3 mt-3">Dice Game</h3>
-                <p class="pb-3 text-muted">This is a dice game match. Test your luck and see who wins. Good luck!</p>
-                <a href="https://github.com/tjlc/DiceGame" target="_blank" class="card-link text-dark">Visit Now</a>
+                <p class="pb-3 text-muted">This is a dice game match. Try this and test your luck and see who wins.
+                    Good luck!</p>
+                <a href="https://tjlc.github.io/DiceGame/" target="_blank" class="card-link text-dark">Visit Now</a>
             </div>
         </div>
     </div>
@@ -138,29 +177,29 @@
                 </label>
             </div>
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Send Email
-        </button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Send Email
+            </button>
 
-        <!-- Modal -->
-        <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Message Successfully Sent!
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- Modal -->
+            <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Message Successfully Sent!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </form>
     </div>
     <!-- Contact Me End -->

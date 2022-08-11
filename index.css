@@ -21,8 +21,9 @@ body {
 }
 
 .nav-link:hover {
-    border: solid 1px gray;
-    border-radius: 50px;
+    /* border: solid 2px #777;
+    border-radius: 50px; */
+    text-decoration: underline;
 }
 
 .fa-search {
@@ -69,8 +70,8 @@ body {
 
 a {
     text-decoration: none;
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    color: #54b3d6;
+    box-shadow: inset 0 0 0 0 gray;
+    color: gray;
     margin: 0 -.25rem;
     padding: 10px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -81,8 +82,8 @@ a {
     border: solid 1px gray;
     border-radius: 50px;
     padding: 10px;
-    box-shadow: inset 100px 0 0 0 #54b3d6;
-    color: white;
+    box-shadow: inset 100px 0 0 0 gray;
+    color: #fff;
 }
 
 /* Footer */
